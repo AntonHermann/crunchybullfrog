@@ -1,0 +1,80 @@
+body {
+	font-family: Roboto, sans-serif;
+	/*background-color: #181818;*/
+	/*background-image: url(img/bg2.jpg);*/
+	/*color: white;*/
+	line-height: 1.5;
+
+	--primary-color: #4caf50;
+	--secondary-color: #1e88e5;
+	--mdc-theme-primary: var(--primary-color);
+	--mdc-theme-text-primary-on-primary: rgba(0,0,0,.87);
+}
+
+.main_nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.main_nav nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+.main_nav nav {
+	bottom: 0;
+	display: flex;
+	flex: 1 0 auto;
+	background: var(--primary-color);
+	box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.3);
+	justify-content: center;
+}
+.main_nav nav a {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	color: rgba(0,0,0,.54);
+	height: 56px;
+	font-size: 14px;
+	min-width: 56px;
+	max-width: 96px;
+}
+.main_nav nav a span {
+	display: none;
+}
+.main_nav nav a[href="#"] {
+	color: rgba(0,0,0,.87);
+	min-width: 96px;
+	max-width: 168px;
+	padding-top: 6px;
+	padding-bottom: 10px
+}
+.main_nav nav a[href="#"] span {
+	display: block;
+}
+
+
+main {
+	margin-bottom: 65px;
+	padding: 16px;
+}
+
+.interview ul .mdc-list-item {
+	white-space: normal;
+	height: auto;
+	margin-bottom: 16px;
+}
+.interview ul li .mdc-list-item__start-detail {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: rgba(0,0,0,.26);
+}
+
+.gallery .mdc-card {
+	max-width: 200px;
+}
